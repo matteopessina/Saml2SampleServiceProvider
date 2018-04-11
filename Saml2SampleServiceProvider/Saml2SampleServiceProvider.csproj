@@ -232,6 +232,7 @@
     </Content>
     <Content Include="README.md" />
     <Content Include="App_Data\stubidp.sustainsys.com.cer" />
+    <Content Include="App_Data\ststest.reti.it.cer" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

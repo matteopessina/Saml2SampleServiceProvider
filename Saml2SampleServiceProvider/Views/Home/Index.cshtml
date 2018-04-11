@@ -26,25 +26,6 @@ else
     <p>
         You are signed in. <a href="@Url.Action("../Saml2/Logout", new { ReturnUrl = "/?Status=LoggedOut" })">Log out</a>.
     </p>
-    <table>
-        <thead>
-            <tr>
-                <th>Claim Type</th>
-                <th>Claim Value</th>
-                <th>Issuer</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var c in System.Security.Claims.ClaimsPrincipal.Current.Claims)
-            {
-                <tr>
-                    <td>@c.Type</td>
-                    <td>@c.Value</td>
-                    <td>@c.Issuer</td>
-                </tr>
-            }
-        </tbody>
-    </table>
 }
 <p>
     <a href="@Url.Content("~/Saml2/")">Service Provider Metadata.</a>
